@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 48px;
+    font-style: oblique;
+    word-wrap: break-spaces;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.clock{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin: 30px auto 30px;
+    background: url(./images/clock.png) center / contain no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+
+.form{
+    width: 100%;
+    max-width: 450px;
+    margin: 30px auto;
+    font-size: 22px;
+    padding: 15px;
+}
+
+.form__input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 20px;
+}
+.form__button{
+    width: 100%;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    font-size: 20px;
+    border:0;
+    outline:none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+.form__button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,1);
+}
+.clock-text{
+    width: 100%;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 575px) {
+    .main-title {
+        font-size: 26px;
+    }
+    .clock{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .clock{
+        font-size: 18px;
+    }
+
+}
